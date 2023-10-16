@@ -5,8 +5,8 @@ class DirBgPage:
     def __init__(self, page):
         self.page = page
         self.url = "https://dir.bg/"
-        self.accept_cookies = page.get_by_label("Да, към сайта", exact=True)
-        self.today_link = page.locator("#nav-item-3").get_by_role("link", name="Днес")
+        self.accept_cookies = page.locator(".fc-cta-consent")
+        self.today_link = page.locator("#nav-item-3")
         self.today_url = "https://dnes.dir.bg/"
 
     def navigate(self):
