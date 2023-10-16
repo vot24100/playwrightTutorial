@@ -11,7 +11,7 @@ class DirBgPage:
 
     def navigate(self):
         self.page.goto(self.url)
-        self.accept_cookies.click()
+        # self.accept_cookies.click()
 
     def go_to_today(self):
         self.today_link.click()
