@@ -1,7 +1,7 @@
 from playwright.sync_api import Playwright, sync_playwright, expect
 
 
-def run(playwright: Playwright) -> None:
+def test_dirbg(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=True, slow_mo=500)
     context = browser.new_context()
     page = context.new_page()
@@ -18,4 +18,4 @@ def run(playwright: Playwright) -> None:
 
 
 with sync_playwright() as playwright:
-    run(playwright)
+    test_dirbg(playwright)
