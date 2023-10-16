@@ -9,10 +9,7 @@ def test_today(set_up):
     dirbg_page.navigate()
     dirbg_page.go_to_today()
     dirbg_page.assert_today_page()
-    print("Success")
-    # ---------------------
-    # context.close()
-    # browser.close()
+
 
 
 @pytest.mark.xfail
